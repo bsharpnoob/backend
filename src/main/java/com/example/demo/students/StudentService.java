@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StudentService {
 
-    public Student getStudents() {
-        return new Student(1234,"John Cena",24, LocalDate.now(),"johncena@gmail.com");
+    public String getMessage() {
+        return "If you visit this website and read this message then you suck poop :)";
     }
 }

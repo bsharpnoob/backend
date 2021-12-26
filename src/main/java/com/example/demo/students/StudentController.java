@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/api/students", method = RequestMethod.GET)
+@RequestMapping(path = "/api/message", method = RequestMethod.GET)
 public class StudentController {
 
     private final StudentService studentService = new StudentService();
@@ -17,9 +17,9 @@ public class StudentController {
 
 
     @GetMapping
-    public Student getStudents()
+    public String getStudents()
     {
-       return studentService.getStudents();
+       return studentService.getMessage();
     }
 
 }
