@@ -12,11 +12,9 @@ import java.util.List;
 @RequestMapping(path = "/api/students", method = RequestMethod.GET)
 public class StudentController {
 
-    private final StudentService studentService;
+    private final StudentService studentService = new StudentService();
 
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
-    }
+
 
     @GetMapping
     public List<Student> getStudents()
