@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StudentService {
 
-    public List<Student> getStudents() {
-        return List.of(new Student(1234,"John Cena",24, LocalDate.now(),"johncena@gmail.com"));
+    public Student getStudents() {
+        return new Student(1234,"John Cena",24, LocalDate.now(),"johncena@gmail.com");
     }
 }
