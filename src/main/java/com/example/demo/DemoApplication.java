@@ -25,19 +25,7 @@ public class DemoApplication {
 
 
 
-		try
-		{
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/students","root","test1234");
 
-			String query = "insert into student(id,name) values(122323234,'jeff')";
-			Statement statement = connection.createStatement();
-			statement.executeUpdate(query);
-
-
-		}catch(Exception error)
-		{
-			System.out.println(error.getMessage());
-		}
 
 
 
